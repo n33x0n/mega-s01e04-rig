@@ -34,8 +34,8 @@ export function DigestPage({ digest }: { digest: NightDigest }) {
                   <td>{r.retries}</td>
                   <td>{r.lastStatus}</td>
                   <td>{r.lastError ?? dash}</td>
-                  <td>{r.firstAt}</td>
-                  <td>{r.lastAt}</td>
+                  <td class="time">{r.firstAt}</td>
+                  <td class="time">{r.lastAt}</td>
                 </tr>
               );
             })}
